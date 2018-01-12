@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage BackgroundColor="#202020" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Bitcoin" x:Class="Bitcoin.BitcoinPage">
+    <Grid x:Name="BitcoinGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Bitcoin Prices" TextColor="White" FontSize="40" VerticalOptions="Center" HorizontalOptions="Center" TranslationY="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" />
+        <Label x:Name="BitcoinPriceLabel" Text="" TextColor="White" FontSize="48" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="3" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5" />
+        <Button Text="USD" FontSize="24" FontAttributes="Bold" TextColor="#202020" BackgroundColor="White" VerticalOptions="Center" TranslationY="-20" Grid.Row="7" Grid.Column="1" Clicked="ChangeCurrency" />
+        <Button Text="GBP" FontSize="24" FontAttributes="Bold" TextColor="White" BackgroundColor="#202020" VerticalOptions="Center" TranslationY="-20" Grid.Row="7" Grid.Column="2" Clicked="ChangeCurrency" />
+        <Button Text="EUR" FontSize="24" FontAttributes="Bold" TextColor="White" BackgroundColor="#202020" VerticalOptions="Center" TranslationY="-20" Grid.Row="7" Grid.Column="3" Clicked="ChangeCurrency" />
+    </Grid>
+</ContentPage>
